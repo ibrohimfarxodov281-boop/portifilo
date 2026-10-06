@@ -1,0 +1,185 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  --fa-family-classic: "Font Awesome 7 Free";
+  --fa-font-solid: normal 900 1em / 1 var(--fa-family-classic);
+  --fa-style-family-classic: var(--fa-family-classic);
+  color: white;
+}
+
+.container {
+  height: 85%;
+  width: 100%;
+  margin: auto;
+}
+
+nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+  height: 100px;
+  align-items: center;
+  position: fixed;
+  z-index: 1;
+}
+video{
+  width: 120%;
+  position: fixed;
+  z-index: -1;
+}
+ul {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  margin-right: 30px;
+}
+
+li {
+  width: 115px;
+  text-align: center;
+  border: 1px solid gray;
+  background-color: gray;
+  padding: 10px;
+  border-radius: 10px;
+}    
+
+
+
+
+.gg {
+  color: white;
+  font-size: 30px;
+  text-align: start;
+}
+
+.home-wrapper {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.img {
+  margin-top: 100px;
+  width: 400px;
+  height: 500px;
+}
+
+li {
+  position: relative;
+  overflow: hidden;
+}
+
+li::after {
+  content: "";
+
+  width: 0px;
+  height: 40px;
+  position: absolute;
+
+  left: 55px;
+  bottom: 0;
+  background: linear-gradient(#ffffff27, #ffffffb9, #ffffff10);
+  transition: all 0.3s ease;
+  border-radius: 5px;
+}
+
+li:hover::after {
+  left: 0;
+  width: 116px;
+}
+
+.ism {
+  background: linear-gradient(#ffae00);
+  background-clip: text;
+  color: transparent;
+}
+.big {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+.flip-scene {
+  perspective: 400px;
+  width: 27%;
+  height: 300px;
+}
+
+    .flip-card {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  margin-top: 50px;
+  transform-style: preserve-3d;
+  transition: transform 0.5s ease;
+}
+.flip-card > div {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  backface-visibility: hidden;
+}
+.flip-card:hover {
+  transform: rotateY(180deg);
+}
+
+.flip-front {
+  background-color: red;
+}
+
+.flip-back {
+  background-color: aqua;
+  transform: rotateY(180deg);
+}
+
+
+.corousel{
+   width: 60vw;
+   height: 500px;
+   padding: 20px;
+   display: flex;
+   gap: 4vw;
+   margin: auto;
+}
+
+.corousel div{
+  background-color: #eeeeeeee;
+  border: 1px solid #dddddddd;
+  padding: 20px;
+  flex: 0 0 100%;
+  scroll-snap-align:center;
+
+}
+
+.corousel div:nth-child(even) {
+  background-color: cyan;
+}
+
+.corousel{
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory ;
+}
+
+::-webkit-scrollbar{
+  width: 0px ;
+}
+
+.img1{
+  background-color: red;
+}
+
+.img2{
+  background-color: blue;
+
+}
+
+.img3{
+  background-color: black;
+}
+
+.img4{
+  background-color: gold;
+}
